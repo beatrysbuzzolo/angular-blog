@@ -1,0 +1,28 @@
+<h1>Equipes:</h1>
+<ul>
+    <li *ngFor="let equipe of equipes" 
+        (click)="onTeamSelected(equipe.constructorId)" 
+        [class.selected]="equipeSelecionada === equipe.constructorId" 
+        class="equipe-item">
+        {{ equipe.name }}
+    </li>
+</ul>
+
+<div *ngIf="equipeSelecionada">
+    <h2>Pilotos da equipe:</h2>
+    <div class="piloto-cards">
+        <div *ngFor="let piloto of pilotos" class="piloto-card">
+            <img [src]="driversImages[piloto.givenName + ' ' + piloto.familyName]" alt="{{ piloto.givenName }}" class="piloto-img"/>
+            <h3>
+                {{ piloto.givenName }} {{ piloto.familyName }} </h3>
+                <span class="bandeira-container">
+                    <img class="bandeira-img" [src]="getBandeira(piloto.nationality)" alt="{{ piloto.nationality }}" />
+                </span>
+            
+        </div>
+    </div>
+</div>
+
+<button (click)="voltarParaHome()">Voltar</button>
+
+ 

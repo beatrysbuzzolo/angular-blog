@@ -1,12 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
 
 
 .container__menu-bar > ul{
   display: flex;
   flex-direction: row;
+  font-family: 'Bungee Tint', sans-serif;
+  font-size: 20px;
+
+  
+  
+  
 }
 
 .container__menu-bar > ul > li{
   margin-right: 20px;
   list-style: none;
+  text-transform: uppercase;
+  
+ 
 }
 

@@ -1,0 +1,12 @@
+
+<h1> RESULTADOS POR CORRIDA: </h1>
+<div *ngFor="let race of raceResults" class="race">
+
+    <h2>{{ race.MRData.RaceTable.Races[0].raceName }} ({{ race.MRData.RaceTable.Races[0].date }})</h2>
+    <div *ngFor="let result of race.MRData.RaceTable.Races[0].Results" class="result">
+      <p><strong> P{{ result.position }} </strong> - {{ result.Driver.givenName }} {{ result.Driver.familyName }} ({{ result.Constructor.name }})</p>
+    </div>
+  </div>
+
+  <button (click)="voltarParaHome()">Voltar</button>
+  

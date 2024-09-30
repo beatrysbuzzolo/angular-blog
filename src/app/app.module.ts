@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './components/menu-bar/menu-bar.component';
@@ -9,6 +8,10 @@ import { BigCardComponent } from './components/big-card/big-card.component';
 import { SmallCardComponent } from './components/small-card/small-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
+import { EquipePilotoComponent } from './equipe-piloto/equipe-piloto.component';
+import { ResultadosPaginaComponent } from './resultados-pagina/resultados-pagina.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PilotosComponent } from './pages/pilotos/pilotos.component';
 
 
 @NgModule({
@@ -19,11 +22,16 @@ import { ContentComponent } from './pages/content/content.component';
     BigCardComponent,
     SmallCardComponent,
     HomeComponent,
-    ContentComponent
+    ContentComponent,
+    EquipePilotoComponent,
+    ResultadosPaginaComponent,
+    PilotosComponent,
+  
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

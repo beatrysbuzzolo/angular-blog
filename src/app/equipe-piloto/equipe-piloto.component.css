@@ -1,0 +1,107 @@
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  margin-bottom: 5px;
+  font-size: x-large;
+  font-family: 'Bungee';
+}
+
+
+div>ul {
+  margin-top: 5px;
+}
+
+.selected {
+  font-weight: bold;
+  color: red;
+}
+
+.equipe-item {
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+.piloto-item {
+  cursor: default;
+
+}
+
+h1 {
+  font-family: 'Bungee Tint', sans-serif;
+  font-size: 55px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Bungee Tint', sans-serif;
+  font-size: 55px;
+  color: lightgray;
+  text-align: left;
+  margin-top: 20px;
+}
+
+
+button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Bungee';
+}
+
+button:hover {
+  background-color: red;
+}
+
+.piloto-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.piloto-card {
+  border: 5px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  width: 500px;
+  height: 500px;
+  box-shadow: 8px 4px 36px -4px rgba(0, 0, 0, 1) inset;
+  -webkit-box-shadow: 8px 4px 36px -4px rgba(0, 0, 0, 1) inset;
+  -moz-box-shadow: 8px 4px 36px -4px rgba(0, 0, 0, 1) inset;
+  text-align: center;
+}
+
+.piloto-card h3 {
+  color: #fff;
+  font-size: 50px;
+  font-family: 'Bungee';
+  margin-right: 10px;
+  text-shadow: #444;
+}
+
+.piloto-card p {
+  color: #bbb;
+  margin-top: 10px;
+  font-size: 13px;
+  font-family: 'Bungee';
+}
+
+.piloto-card img.piloto-img {
+  width: 300px;
+  border: solid 5px #444;
+  border-radius: 5px;
+}
+
+.bandeira-img {
+  width: 25px;
+  height: auto;
+  align-items: center;
+
+}
